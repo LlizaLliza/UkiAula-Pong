@@ -6,10 +6,13 @@ public class PaddleController : MonoBehaviour
 {
     public int speed;
     public KeyCode upKey, downKey;
-    
+
+    private Rigidbody2D rb;
+
     private void Update()
     {
-        // get input 
+        rb = GetComponent<Rigidbody2D>();
+        
         // move object 
         MoveObject(GetInput());
     }
@@ -30,6 +33,7 @@ public class PaddleController : MonoBehaviour
 
     private void MoveObject(Vector2 movement)
     {
-        transform.Translate(movement * Time.deltaTime);
+        rb.velocity = movement;
+        //transform.Translate(movement * Time.deltaTime);
     }
 }
