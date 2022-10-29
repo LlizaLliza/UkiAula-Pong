@@ -133,8 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 176673439}
   - component: {fileID: 176673438}
+  - component: {fileID: 176673440}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,6 +206,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &176673440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176673437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40292acfef5c2c64ba1a313f9600386d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 0, y: 0}
 --- !u!1 &346155672
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080181099}
   - component: {fileID: 1080181098}
+  - component: {fileID: 1080181100}
   m_Layer: 0
   m_Name: Paddle Kanan
   m_TagString: Untagged
@@ -616,6 +631,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1080181100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080181097}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454588ea8f7fc0042bc3414ce8a70865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
 --- !u!1 &1096676094
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1096676096}
   - component: {fileID: 1096676095}
+  - component: {fileID: 1096676097}
   m_Layer: 0
   m_Name: Paddle Kiri
   m_TagString: Untagged
@@ -698,3 +727,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1096676097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096676094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454588ea8f7fc0042bc3414ce8a70865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
