@@ -5,6 +5,7 @@ using UnityEngine;
 public class PaddleController : MonoBehaviour
 {
     public int speed;
+    public KeyCode upKey, downKey;
     
     private void Update()
     {
@@ -15,11 +16,11 @@ public class PaddleController : MonoBehaviour
 
     private Vector2 GetInput()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(upKey))
         {
             return Vector2.up * speed;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(downKey))
         {
             return Vector2.down * speed;
         }
