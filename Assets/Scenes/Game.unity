@@ -555,7 +555,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 346155672}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d70f3c30f87c8474a9e2cfe230dbf109, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -872,7 +872,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 678427180}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d70f3c30f87c8474a9e2cfe230dbf109, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1364,7 +1364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aacf5dcb52c332469c860588c8a9981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 1236755485}
   ball: {fileID: 176673442}
   magnitude: 2
 --- !u!212 &1102426717
@@ -1494,7 +1494,8 @@ MonoBehaviour:
   spawnInterval: 5
   powerUpAreaMin: {x: -7, y: -4}
   powerUpAreaMax: {x: 7, y: 4}
-  powerUpTemplateList: []
+  powerUpTemplateList:
+  - {fileID: 1102426714}
 --- !u!1 &1273935471
 GameObject:
   m_ObjectHideFlags: 0
