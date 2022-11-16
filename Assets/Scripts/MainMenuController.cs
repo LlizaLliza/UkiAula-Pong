@@ -27,6 +27,12 @@ public class MainMenuController : MonoBehaviour
         }
     }
 
+    //open url method
+    public void OpenURL(string URLName)
+    {
+        Application.OpenURL(URLName);
+    }
+
     public void OpenAuthor()
     {
         Debug.Log("Created by UkiAula");
