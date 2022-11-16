@@ -5,9 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    public void PlayGame()
+    //public void PlayGame()
+    //{
+    //    SceneManager.LoadScene("Game");
+    //}
+
+    public void ChangeScene(string SceneName)
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(SceneName);
+    }
+
+    public void PausedGame(bool Paused)
+    {
+        if (!Paused)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 
     public void OpenAuthor()
