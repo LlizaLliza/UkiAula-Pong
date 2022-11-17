@@ -40,6 +40,17 @@ public class PaddleController : MonoBehaviour
         Debug.Log("TEST: " + movement);
         //transform.Translate(movement * Time.deltaTime);
 
+        //limit paddle position
+        if (transform.position.y > 3.5f)
+        {
+            transform.position = new Vector2(transform.position.x, 3.5f);
+        }
+        
+        if (transform.position.y < -3.5f)
+        {
+            transform.position = new Vector2(transform.position.x, -3.5f);
+        }
+
         //speedcheck
         if (speed > 6)
         {
