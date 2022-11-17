@@ -117,4 +117,4 @@ MonoBehaviour:
   leftPaddle: {fileID: 0}
   rightPaddle: {fileID: 0}
   longAddedValue: 2
-  timeDestroy: 10
+  timeDestroy: 15

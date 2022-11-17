@@ -118,7 +118,7 @@ MonoBehaviour:
   leftPaddle: {fileID: 0}
   rightPaddle: {fileID: 0}
   speedAddedValue: 2
-  timeDestroy: 10
+  timeDestroy: 15
 --- !u!58 &884956746070850426
 CircleCollider2D:
   m_ObjectHideFlags: 0

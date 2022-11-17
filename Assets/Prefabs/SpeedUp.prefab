@@ -125,4 +125,4 @@ MonoBehaviour:
   manager: {fileID: 0}
   ball: {fileID: 0}
   magnitude: 1.5
-  timeDestroy: 10
+  timeDestroy: 15
