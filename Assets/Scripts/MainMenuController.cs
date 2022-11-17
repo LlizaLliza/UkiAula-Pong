@@ -33,8 +33,16 @@ public class MainMenuController : MonoBehaviour
         Application.OpenURL(URLName);
     }
 
+    //open author
     public void OpenAuthor()
     {
         Debug.Log("Created by UkiAula");
+    }
+
+    //for quit aplication
+    public void QuitApplication()
+    {
+        print("quiiit bukan quiet");
+        Application.Quit();
     }
 }
