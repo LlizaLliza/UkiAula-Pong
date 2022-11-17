@@ -37,4 +37,20 @@ public class PaddleController : MonoBehaviour
         Debug.Log("TEST: " + movement);
         //transform.Translate(movement * Time.deltaTime);
     }
+
+    public void increaseLenghtPaddle(float longAddedValue)
+    {
+        //change left paddle localscale
+        transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y * longAddedValue, transform.localScale.z);
+
+        //change default value
+        StartCoroutine(CompletePowerUp(2));
+    }
+
+    IEnumerator CompletePowerUp(float longAddedValue)
+    {
+        yield return new WaitForSeconds(5);
+
+        transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y / longAddedValue, transform.localScale.z);
+    }
 }

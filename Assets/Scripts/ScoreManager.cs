@@ -25,7 +25,7 @@ public class ScoreManager : MonoBehaviour
         leftScore += increment;
         ball.ResetBall();
 
-        if (rightScore >= maxScore)
+        if (leftScore >= maxScore)
         {
             GameOver();
         }
