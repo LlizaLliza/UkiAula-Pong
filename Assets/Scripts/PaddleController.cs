@@ -9,14 +9,17 @@ public class PaddleController : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private void Update()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+    }
+
+    private void Update()
+    {
         // move object 
         MoveObject(GetInput());
     }
-
+    
     private Vector2 GetInput()
     {
         if (Input.GetKey(upKey))
@@ -36,6 +39,18 @@ public class PaddleController : MonoBehaviour
         rb.velocity = movement;
         Debug.Log("TEST: " + movement);
         //transform.Translate(movement * Time.deltaTime);
+
+        //speedcheck
+        if (speed > 6)
+        {
+            StartCoroutine(SpeedCheck());
+        }
+    }
+
+    IEnumerator SpeedCheck()
+    {
+        yield return new WaitForSeconds(5);
+        speed = 6;
     }
 
     public void increaseLenghtPaddle(float longAddedValue)
